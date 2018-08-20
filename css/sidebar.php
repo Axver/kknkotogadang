@@ -22,7 +22,7 @@
   <label><input type="checkbox" value="" onclick="showagam()">Agam</label>
 </div>
 <div class="checkbox">
-  <label><input type="checkbox" value="">Koto Gadang</label>
+  <label><input type="checkbox" onclick="kotogadang()" value="">Koto Gadang</label>
 </div>
 </div>
 
@@ -90,7 +90,18 @@
 <input type="checkbox"  value="Bangunan Berisi"> Pendidikan Jr Sutijo<br/>
 </div>
 
+
+<h4>Tools</h4>
+<button onclick="openweather()" class="btn btn-info btn-block glyphicon glyphicon-home">Openweather Map</button>
+
+
   <script>
+
+
+    function openweather()
+    {
+      window.location="osm/example/index.php";  
+    }
 
 
   function brjkg()
@@ -117,6 +128,11 @@
     window.location="jorongkg.php";
   }
 
+  function kotogadang()
+  {
+    window.location="index.php";
+  }
+
   
   function mbangunan()
   {
@@ -140,6 +156,7 @@
 
  <div class="col-sm-10">
  <div id="mapid">
+ 
 </div>  
  </div>
 </div>
